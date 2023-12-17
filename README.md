@@ -1,5 +1,6 @@
 # Ratatouille23
 Ratatouille23 è un sistema finalizzato al supporto alla gestione e all’operatività di attività di  ristorazione. Il sistema consiste in un’applicazione performante e affidabile, attraverso cui gli utenti possono fruire delle funzionalità del sistema in modo intuitivo, rapido e piacevole. 
+
 #Punti svolti:
 * Un amministratore può creare utenze per i propri dipendenti (sia addetti alla sala, che addetti alla cucina, che supervisori). Al primo accesso, ogni utente deve re-impostare la password   inserita dall’amministratore, scegliendo una password diversa
 * Un amministratore (o un supervisore) può personalizzare il menù dell’attività di ristorazione. In  particolare, l’utente può creare e/o eliminare elementi dal menù. Ciascun elemento è caratterizzato da un nome, un costo, una descrizione, e un elenco di allergeni comuni. Inoltre, è possibile organizzare gli elementi del menù in categorie personalizzabili (e.g.: primi, dessert, primi di pesce, bibite, etc.), e definire l’ordine con cui gli elementi compaiono nel menù. In fase di inserimento, è richiesto l’autocompletamento di alcuni prodotti (e.g.: bibite o  preconfezionati) utilizzando open data come quelli disponibili in https://it.openfoodfacts.org/data.
