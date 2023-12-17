@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nome_elemento">Nome Elemento*</string>
+    <string name="log_out">Log out</string>
+    <string name="nome">Nome</string>
+    <string name="descrizione">Descrizione</string>
+    <string name="prezzo">Prezzo:</string>
+    <string name="oggetto">Oggetto</string>
+    <string name="contenuto">Contenuto</string>
+    <string name="visualizza">Visualizza</string>
+    <string name="nascondi">Nascondi</string>
+    <string name="numero_tavolo">Numero Tavolo:</string>
+    <string name="totale_elementi">Totale Elementi</string>
+    <string name="aggiungi_tavolo">Aggiungi Tavolo</string>
+    <string name="nessun_tavolo">Nessun Tavolo</string>
+    <string name="caricamento_in_corso">Caricamento in corso..</string>
+    <string name="pannello_amministratore">Pannello Amministratore</string>
+    <string name="notifiche">Notifiche</string>
+    <string name="gestione_menu">Gestione Menu</string>
+    <string name="crea_avviso">Crea Avviso</string>
+    <string name="aggiungi_personale">Aggiungi Personale</string>
+    <string name="gestione_tavolo">Gestione Tavolo:</string>
+    <string name="elementi_desiderati">Elementi desiderati</string>
+    <string name="riepilogo">Riepilogo:</string>
+    <string name="aggiorna">AGGIORNA</string>
+    <string name="creazione_tavolo">Creazione Tavolo:</string>
+    <string name="numero_tavolo_impo">Numero Tavolo*</string>
+    <string name="elementi">Elementi*</string>
+    <string name="salva">Salva</string>
+    <string name="oggetto_avviso">Oggetto Avviso*</string>
+    <string name="contenuto_messaggio">Contenuto Messaggio*</string>
+    <string name="crea">Crea</string>
+    <string name="creazione_personale">Creazione Personale</string>
+    <string name="Nome">Nome*</string>
+    <string name="cognome">Cognome*</string>
+    <string name="email">Email*</string>
+    <string name="password">Password*</string>
+    <string name="ruolo">Ruolo:</string>
+    <string name="nessun_avviso">Nessun Avviso Disponibile</string>
+    <string name="gestione_categoria">Gestione Categoria</string>
+    <string name="categoria">Categoria:</string>
+    <string name="ordina_per">Ordina per:</string>
+    <string name="nessuna_elemento">Nessuna Elemento</string>
+    <string name="categorie">Categorie:</string>
+    <string name="nessuna_categoria">Nessuna Categoria</string>
+    <string name="benvenuto_in">Benvenuto in</string>
+    <string name="ratatouille23">Ratatouille23</string>
+    <string name="mittente">Mittente:</string>
+    <string name="messaggio">Messaggio:</string>
+    <string name="elementi_desiderati_obbligatorio">Elementi desiderati*</string>
+    <string-array name="tipoUtente">
+        <item />
+        <item>Amministratore</item>
+        <item>Supervisore</item>
+        <item>Addetto Alla Sala</item>
+        <item>Addetto Alla Cucina</item>
+    </string-array>
+    <string-array name="ElementiOrdinamento">
+        <item />
+        <item>Nome crescente</item>
+        <item>Nome decrescente</item>
+        <item>Prezzo crescente</item>
+        <item>Prezzo decrescente</item>
+    </string-array>
+</resources>

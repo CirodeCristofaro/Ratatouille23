@@ -1,0 +1,19 @@
+
+docker system prune -a --volumes
+
+
+accedere a docker mysql 
+docker exec -it 0c98b4c32fa7 mysql -u root -p
+
+
+mysql -u root -p 
+
+use nomedb
+
+
+//se docker online sua aws da problemi
+https://thxxyj.tistory.com/42
+
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
+
+sudo chmod 666 /var/run/docker.sock

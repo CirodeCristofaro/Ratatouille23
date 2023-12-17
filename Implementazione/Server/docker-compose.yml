@@ -1,0 +1,36 @@
+version: '3.8'
+name: ratatouille23
+services:
+  db:
+    image: mysql
+    container_name: db_container
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: ratatouille23
+      MYSQL_USER: user_name
+      MYSQL_PASSWORD: user_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+
+  ratatouille23:
+    container_name: ratatouille23_container
+    build: ./
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/ratatouille23?createDatabaseIfNotExist=true&serverTimezone=Europe/Rome
+      SPRING_DATASOURCE_USERNAME: user_name
+      SPRING_DATASOURCE_PASSWORD: user_password
+    restart: always
+
+networks:
+  default:
+    driver: bridge
+    
+volumes:
+  db_data:

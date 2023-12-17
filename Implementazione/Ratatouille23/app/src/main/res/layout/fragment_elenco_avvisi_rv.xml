@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ElencoAvvisiFragment"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical">
+   <ImageButton
+       android:id="@+id/backPulsanteVisualizzaElenco"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_marginStart="30dp"
+       android:background="#00000000"
+       android:minWidth="48dp"
+       android:minHeight="48dp"
+       android:src="@drawable/ic_baseline_arrow_back_50" />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvAvvisi"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="2dp"
+       >
+
+   </androidx.recyclerview.widget.RecyclerView>
+
+   <TextView
+       android:id="@+id/textViewInvisibile"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="150dp"
+       android:textSize="40dp"
+       android:text="@string/nessun_avviso"
+       android:textColor="@color/black"
+       android:textStyle="bold"
+       android:visibility="gone" />
+
+</LinearLayout>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <com.google.android.material.progressindicator.CircularProgressIndicator
+          android:id="@+id/loadingCirculatorElencoAvvisi"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginStart="150dp"
+          android:layout_marginTop="100dp"
+          android:layout_marginEnd="100dp"
+          android:layout_centerInParent="true"
+          android:indeterminate="true"
+          android:visibility="gone"
+          app:indicatorSize="100dp"
+          app:trackColor="#F44336"
+          app:trackThickness="10sp" />
+
+      <TextView
+          android:id="@+id/textLoadingCirculatorElencoAvvisi"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/loadingCirculatorElencoAvvisi"
+          android:layout_centerHorizontal="true"
+          android:text="@string/caricamento_in_corso"
+          android:textColor="#000000"
+          android:textColorHint="#000000"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:visibility="gone" />
+   </RelativeLayout>
+
+</FrameLayout>

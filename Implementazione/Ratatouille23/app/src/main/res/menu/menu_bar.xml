@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group >
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home"/>
+
+    </group>
+
+
+    <item android:title="Pannello"  >
+        <menu>
+            <item
+                android:id="@+id/notifiche"
+                android:icon="@drawable/ic_baseline_notifications_none_24"
+                android:title="Notifiche"/>
+
+            <item
+                android:id="@+id/creaAvviso"
+                android:icon="@drawable/note_svgrepo_com"
+                android:title="Crea Avviso" />
+            <item
+                android:id="@+id/creaCategoria"
+                android:icon="@drawable/dishes_svgrepo_com"
+                android:title="Crea Categoria"/>
+
+            <item
+                android:id="@+id/gestioneMenu"
+                android:icon="@drawable/ic_baseline_menu_book_24"
+                android:title="Gestione Menù" />
+            <item
+                android:id="@+id/aggiungiPersonale"
+                android:icon="@drawable/ic_baseline_group_add_24"
+                android:title="Aggiungi Personale"/>
+            <item
+                android:id="@+id/aggiungiTavolo"
+                android:icon="@drawable/baseline_table_restaurant_24"
+                android:title="Aggiungi Tavolo"/>
+        </menu>
+
+    </item>
+</menu>

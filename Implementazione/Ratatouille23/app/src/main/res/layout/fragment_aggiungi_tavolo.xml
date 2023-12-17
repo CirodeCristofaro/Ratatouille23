@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AggiungiTavoloFragment">
+
+    <ScrollView
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <ImageButton
+                android:id="@+id/backPulsanteArrowAggiungiElementoDelTavolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/ic_baseline_arrow_back_50"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/CreazioneTavolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/creazione_tavolo"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutNumeroTavolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/numeroTavolo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/numero_tavolo_impo" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextViewElementoTavolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:completionThreshold="1"
+                android:ems="10"
+                android:hint="@string/elementi_desiderati_obbligatorio"
+                android:minHeight="48dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text" />
+            <TextView
+                android:id="@+id/riepilogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/riepilogo"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewElementoDelTavolo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSalvaNuovoTavolo"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#82415B"
+                android:text="@string/salva"
+                android:textSize="15sp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:cornerRadius="10sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loadingCirculatorAggiungiTavolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:indicatorSize="100dp"
+            app:trackColor="#F44336"
+            app:trackThickness="10sp" />
+
+        <TextView
+            android:id="@+id/textLoadingCirculatorAggiungiTavolo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loadingCirculatorAggiungiTavolo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/caricamento_in_corso"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/sfondoCardEAltro"
+    android:gravity="bottom"
+    android:layout_height="210sp"
+    >
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Benvenuto:"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginStart="10sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/nomeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:paddingTop="5dp"
+        android:text="Nome"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cognomeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:text="Cognome"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal|bold"
+
+        />
+
+    <TextView
+        android:id="@+id/ruoloHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5sp"
+        android:layout_marginStart="30sp"
+        android:text="Ruolo:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+
+        />
+
+
+</LinearLayout>
